@@ -1,0 +1,261 @@
+	body {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.nav {
+		width: 100%;
+		height: 79px;
+		background-color: white;
+		position: fixed;
+		top: 0;
+		z-index: 999;
+	}
+	.catalog {
+		width: 1310px;
+		height: 79px;
+		margin: 0 auto;
+	}
+	.catalog ul {
+		margin-top: 0;
+		margin-bottom: 0;
+		float: right;
+		line-height: 79px;
+	}
+	.catalog ul li {
+		display: inline-block;
+		padding-right: 27px;	
+	}
+	.catalog ul li:last-child {
+		padding-right: 0;
+	}
+	.catalog ul li a {
+		text-decoration: none;
+		color: black;
+		font-size: 14px;
+	}
+	.catalog ul li:nth-child(6) a {
+		color: skyblue;
+	}
+	.catalog ul li a:hover {
+		color: skyblue;
+	}
+	.mid {
+		width: 100%;
+		margin-top: 70px;
+		background-color: rgb(242,242,242);
+		color: rgb(246,142,130);
+	}
+	.mid h2 {
+		padding-top: 40px;
+		text-align: center;
+		font-size: 35px;
+		font-weight: 300;
+		margin-top: 0;
+	}
+	.bigger {
+		width: 100%;
+		height: 1030px;
+		position: relative;
+	}
+	.row {
+		width: 1310px;
+		height: 897px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.big {
+		width: 833.1px;
+		padding: 20px;
+		float: left;
+		background-color: white;
+	}
+	.big>ul>li>div {
+		position: relative;
+	}
+	.big>ul>li:first-child {
+		margin-top: 10px;
+	}
+	.big>ul>li {
+		list-style: none;
+		width: 833.1px;
+		height: 79px;
+		border: none;
+		border-bottom: 1px solid lightgrey;
+		margin: 20px 0;
+		padding: 0;
+	}
+	.big>ul {
+		margin: 10px 0;
+		padding: 0;
+		height: 897px;
+	}
+	.big>ul>li>div>h3 {
+		margin-top: -10px;
+		margin-bottom: 10px;
+		margin-left: 50px;
+		color: #333333;
+		font-weight: 300;
+		position: absolute;
+		top: 10px;
+	}
+	.big>ul>li>div>i {
+		display: inline-block;
+		margin-top: 15px;
+		font-size: 30px;
+		color: black;
+	}
+	.big>ul>li>div>p {
+		color: lightgrey;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-left: 50px;
+		font-size: 16px;
+		position: absolute;
+		top: 40px;
+	}
+	.big>ul>li>div>div {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: lightgrey;
+		font-weight: 400;
+		font-size: 12px;
+	}
+	.big a {
+		display: inline-block;
+		width: 813px;
+		height: 36px;
+		text-align: center;
+		line-height: 36px;
+		text-decoration: none;
+		color: grey;
+		background-color: rgb(228,234,236);
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	/*.big ul li:hover{*/
+		/*background: grey;*/
+	/*}*/
+
+
+
+
+
+
+	.ri {
+		width: 406px;
+		height: 450px;
+		background-color: white;
+		float: right;
+	}
+	.ri>.bu>input {
+		width: 346px;
+		height: 36px;
+		border: 1px solid lightgrey;
+		border-radius: 5px;
+		margin-left: 31px;
+		margin-top: 30px;
+	}
+	.ri>.bu1>input {
+		width: 346px;
+		height: 36px;
+		border: 1px solid lightgrey;
+		border-radius: 5px;
+		margin-left: 31px;
+		margin-top: 20px;
+	}
+	input::-webkit-input-placeholder{
+		color: #A3AFB7;
+	}
+	.ri>.bu2>textarea {
+		border: 1px solid lightgrey;
+		margin-top: 20px;
+		margin-left: 34px;
+		resize: none;
+	}
+	.bu3 {
+		width: 346px;
+		height: 36px;
+		margin-top: 20px;
+		margin-left: 34px;
+		position: relative;
+	}
+	.ri>.bu3>input {
+		width: 346px;
+		height: 36px;
+		border: 1px solid lightgrey;
+		border-radius: 5px;
+	}
+	.ri>.bu3>div {
+		width: 110px;
+		height: 39px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		text-align: center;
+		background-color: lightgrey;
+	}
+	.ri>.bu3>div>img {
+		margin-top: 9.5px;
+	}
+	.ri>a {
+		display: inline-block;
+		width: 346px;
+		height: 36px;
+		margin-top: 20px;
+		margin-left: 35px;
+		background-color: rgb(98,168,234);
+		border-radius: 5px;
+		text-align: center;
+		line-height: 36px;
+		text-decoration: none;
+		color: white;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.footer {
+		width: 100%;
+		height: 182px;
+		margin-top: 20px;
+		background-color: rgb(245,245,245);
+	}
+	.icons {
+		width: 100%;
+		height: 56px;
+		text-align: center;
+	}
+	.icons a {
+		text-decoration: none;
+		font-size: 40px;
+		color: skyblue;
+		line-height: 56px;
+		margin: 10px;
+	}
+	#weixin {
+		color: green;
+	}
+	.dizi {
+		width: 1310px;
+		height: 75px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.dizi a {
+		text-decoration: none;
+		color: skyblue;
+		font-size: 14px;
+	}
+	.dizi p {
+		font-size: 14px;
+		color: #aaaaaa;
+	}

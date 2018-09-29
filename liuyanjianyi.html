@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/liuyanjianyi.css">
+	<link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_790462_5otxgu3505j.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="catalog">
+			<ul>
+				<li><a href="./网站首页.html">网站首页</a></li>
+				<li><a href="./花言花语.html">花言花语</a></li>
+				<li><a href="">素馨动态</a></li>
+				<li><a href="">淘宝商城</a></li>
+				<li><a href="./素馨花艺.html">素馨花艺</a></li>
+				<li><a href="">留言建议</a></li>
+				<li><a href="./关于素馨.html">关于素馨</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mid">
+		<h2>留言建议</h2>
+		<div class="bigger">
+			<div class="row">
+				<div class="big">
+					<ul>
+						<li>
+							<div>
+								<i class="iconfont icon-04"></i>
+								<h3>张三</h3>
+								<p>更新的有些慢</p>
+								<div>
+									2018-09-16 18:33:45
+								</div>
+							</div>
+						</li>
+					</ul>
+					<a href="">加载更多</a>
+				</div>
+				<div class="ri">
+					<div class="bu">
+						<input type="text" name="" placeholder=" 姓名">
+					</div>
+					<div class="bu1">
+						<input type="text" name="" placeholder=" 联系电话">
+					</div>
+					<div class="bu2">
+						<textarea cols="46" rows="8" placeholder="您的建议" maxlength="200"></textarea><br>
+						<p align="center">最多可输入200字，您已输入<span>0</span>字</p>
+					</div>
+					<div class="bu3">
+						<input type="text" name="" placeholder="    验证码">
+						<div>
+							<img src="./img/ajax.png">
+						</div>
+					</div>
+					<a href="javascript:void(false);">提交</a>
+					
+				</div>
+				
+			</div>	
+		</div>	
+	</div>
+	<div class="footer">
+		<div class="icons">
+			<a href="" class="iconfont icon-qq"></a>
+			<a href="" class="iconfont icon-weixin" id="weixin"></a>
+			<a href="" class="iconfont icon-youxiang"></a>
+		</div>
+		<div class="dizi">
+			<a href="">豫ICP备17021305号</a>&nbsp&nbsp&nbsp&nbsp<img src="./img/jing.png"><a href="">豫公网安备41012202000160号</a>
+			<p>联系电话 0371-62180519 15890062947</p>
+			<p>郑州素馨花卉有限公司 版权所有©2017-2021</p>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+
+	let text=document.querySelector('textarea');
+	let input=document.querySelector('input');
+	let num=document.querySelector('.bu2 p span');
+	let btn=document.querySelector('.ri a ');
+	let ul = document.querySelector('.big ul');
+
+
+	text.oninput=function () {
+		let textnum=this.value.length;
+		num.innerHTML=textnum;
+	};
+
+	btn.onclick=function () {
+		let name=input.value;
+		let con=text.value;
+		let date = new Date();
+		// 一周中的某一天 0-6
+		let day2=date.getDay();
+		console.log(day2);
+
+		let day1=date.getDate();
+		console.log(day1);
+
+		// 月份 0-11
+		let day3=date.getMonth();
+		console.log(day3);
+
+		// 年份
+		let years = date.getFullYear()
+		console.log(years);
+
+		let hours = date.getHours()
+		console.log(hours);
+
+
+		let minnutes = date.getMinutes()
+		console.log(minnutes);
+
+
+		let seconds = date.getSeconds()
+		console.log(seconds);
+		let str=`<li>
+					<div>
+						<i class="iconfont icon-04"></i>
+						<h3>${name}</h3>
+						<p>${con}</p>
+						<div>
+							${years}年${day3+1}月${day1}日 星期${day2} ${hours}时${minnutes}分${seconds}秒
+						</div>
+					</div>
+				</li>`;
+		if (input.value!=''&&text.value!='' ){
+			ul.innerHTML+=str;
+		}else {
+			alert('没有内容可以提交')
+		}
+		input.value='';
+		text.value='';
+		num.innerHTML='';
+	}
+	ul.onmouseover=function (e) {
+		let event=e.target;
+		// 判断节点名称和类名列表   event.classList.contains('list')
+		if (event.nodeName=='LI'){
+			event.style.background='#ccc';
+		}
+	}
+	ul.onmouseout=function (e) {
+		let event=e.target;
+		// 判断节点名称和类名列表   event.classList.contains('list')
+		if (event.nodeName=='LI'){
+			event.style.background='#fff';
+		}
+	}
+
+
+
+
+
+</script>
